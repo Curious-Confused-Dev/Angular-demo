@@ -9,5 +9,10 @@ import { Component } from '@angular/core';
 
 // Export keyword is used to acces this class globally.
 export class ServerComponent {
-     
+    serverId: number = 10;
+    serverStatus: string = 'Offline';  
+    
+    getServerDetails() {
+        return this.serverStatus;
+    }
 }
